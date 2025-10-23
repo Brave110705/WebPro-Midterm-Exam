@@ -25,6 +25,17 @@
         </div>
     </nav>
 
+    <div class="mb-6">
+        <h2 class="text-lg font-semibold mb-2 text-green-700">Add Category</h2>
+        <form action="{{ route('categories.store') }}" method="POST" class="flex gap-2">
+            @csrf
+            <input type="text" name="name" placeholder="Category Name" class="border rounded px-3 py-2 flex-1" required>
+            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+                Add Category
+            </button>
+        </form>
+    </div>
+
     <!--  di bawah ini buat tabel, dll-->
     <div class="max-w-4xl mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
     <h1 class="text-2xl font-bold mb-4 text-green-700">Medicine List</h1>
