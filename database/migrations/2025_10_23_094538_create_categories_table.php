@@ -16,6 +16,12 @@ return new class extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        \DB::table('categories')->insert([
+            ['name' => 'Antibiotik', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Antivirus', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Vitamin', 'created_at' => now(), 'updated_at' => now()],
+        ]);
     }
 
     /**
