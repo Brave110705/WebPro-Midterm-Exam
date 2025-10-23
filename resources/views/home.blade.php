@@ -44,7 +44,7 @@
             masi gtw mw ditaruh ap
         </p>
 
-        <a href="#" class="bg-green-600 text-white px-5 py-3 rounded-lg shadow hover:bg-green-700 transition">
+        <a href="/medicines" class="bg-green-600 text-white px-5 py-3 rounded-lg shadow hover:bg-green-700 transition">
             Go to Database
         </a>
     </main>
