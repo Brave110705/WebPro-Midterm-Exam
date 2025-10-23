@@ -14,8 +14,7 @@
             <h1 class="text-xl font-bold">💊 Medicine Database</h1>
             <div class="space-x-4">
                 <a href="/" class="hover:underline">Home</a>
-                <a href="#" class="hover:underline">Database</a>
-
+                <a href="/medicines" class="hover:underline">Database</a>
                 @auth
                     <span class="font-semibold">{{ Auth::user()->name }}</span>
                 @else
@@ -49,7 +48,7 @@
         </a>
     </main>
 
-    <!-- ✅ Logout button (bottom right) -->
+    <!-- Logout button (bwh kanan) -->
     @auth
         <form method="POST" action="{{ route('logout') }}" class="fixed bottom-1 right-0">
             @csrf
